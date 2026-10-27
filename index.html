@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yoga and Pilates Studio: Hatha, Hot Yoga and Pilates classes, coaches and online booking.">
+  <title>Yoga and Pilates Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme switch lives before everything: the CSS reads its state with :has() -->
+  <input type="checkbox" id="theme-toggle" class="visually-hidden" aria-label="Switch dark mode">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Yoga and Pilates Studio, home">
+      <svg class="brand__logo" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="currentColor">
+          <ellipse cx="32" cy="22" rx="7" ry="15"/>
+          <ellipse cx="32" cy="22" rx="7" ry="15" transform="rotate(-50 32 44)" opacity=".75"/>
+          <ellipse cx="32" cy="22" rx="7" ry="15" transform="rotate(50 32 44)" opacity=".75"/>
+          <ellipse cx="32" cy="22" rx="6" ry="13" transform="rotate(-95 32 46)" opacity=".5"/>
+          <ellipse cx="32" cy="22" rx="6" ry="13" transform="rotate(95 32 46)" opacity=".5"/>
+        </g>
+      </svg>
+      <span class="brand__name">Yoga &amp; Pilates <em>Studio</em></span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="visually-hidden" aria-label="Open menu">
+    <label for="nav-toggle" class="burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#practices">Practices</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#about">About the Studio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <svg class="hero__art" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+        <circle cx="200" cy="200" r="190" fill="var(--blob-1)"/>
+        <circle cx="270" cy="150" r="120" fill="var(--blob-2)"/>
+        <circle cx="140" cy="260" r="90" fill="var(--blob-3)"/>
+      </svg>
+      <h1 id="hero-title">Find Inner Balance and Strength</h1>
+      <p class="hero__lead">Hatha, Hot Yoga and Pilates in calm, sunlit halls. Small groups, kind coaches, no rush.</p>
+      <a class="button button--cta" href="#signup">Sign Up for a Free Lesson</a>
+    </section>
+
+    <section class="section" id="practices" aria-labelledby="practices-title">
+      <h2 id="practices-title">Our Practices</h2>
+      <p class="section__intro">Pick a direction by level and by length of the session.</p>
+      <ul class="grid">
+        <li>
+          <article class="card">
+            <h3>Hatha Yoga</h3>
+            <p>Slow postures and breathing. Builds flexibility and calm.</p>
+            <dl class="facts">
+              <div><dt>Level</dt><dd>Beginner</dd></div>
+              <div><dt>Session</dt><dd>60 min</dd></div>
+            </dl>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Hot Yoga</h3>
+            <p>Dynamic flow in a warm hall (38&nbsp;&deg;C). Deep stretch and detox.</p>
+            <dl class="facts">
+              <div><dt>Level</dt><dd>Intermediate</dd></div>
+              <div><dt>Session</dt><dd>75 min</dd></div>
+            </dl>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Pilates</h3>
+            <p>Core, posture and control on mats and reformers.</p>
+            <dl class="facts">
+              <div><dt>Level</dt><dd>All levels</dd></div>
+              <div><dt>Session</dt><dd>50 min</dd></div>
+            </dl>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section section--tint" id="schedule" aria-labelledby="schedule-title">
+      <h2 id="schedule-title">Schedule</h2>
+      <ul class="grid grid--compact">
+        <li class="slot"><strong>Mon, Wed</strong><span>08:00 Hatha Yoga</span></li>
+        <li class="slot"><strong>Tue, Thu</strong><span>19:00 Hot Yoga</span></li>
+        <li class="slot"><strong>Fri</strong><span>09:00 Pilates</span></li>
+        <li class="slot"><strong>Sat</strong><span>11:00 Pilates &amp; Stretch</span></li>
+      </ul>
+    </section>
+
+    <section class="section" id="prices" aria-labelledby="prices-title">
+      <h2 id="prices-title">Prices</h2>
+      <ul class="grid grid--compact">
+        <li class="slot"><strong>First lesson</strong><span>Free</span></li>
+        <li class="slot"><strong>Single visit</strong><span>5 000 KZT</span></li>
+        <li class="slot"><strong>8 visits / month</strong><span>32 000 KZT</span></li>
+        <li class="slot"><strong>Unlimited</strong><span>55 000 KZT</span></li>
+      </ul>
+    </section>
+
+    <section class="section section--tint" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About the Studio</h2>
+      <p class="section__intro">We are a small studio. Every class has no more than twelve people, so a coach can help each of you.</p>
+      <ul class="grid">
+        <li>
+          <article class="card">
+            <h3>Aigerim S.</h3>
+            <p>Hatha and Hot Yoga coach. 9 years of practice.</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Dana K.</h3>
+            <p>Pilates instructor, works with posture and the back.</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Marat T.</h3>
+            <p>Breathing and mobility coach for beginners.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="signup" aria-labelledby="signup-title">
+      <h2 id="signup-title">Book a Free Lesson</h2>
+      <p id="thanks" class="notice" role="status">Thank you! We will call you soon to confirm the time.</p>
+      <form class="form" action="#thanks" method="get">
+        <fieldset class="form__group">
+          <legend>Your details</legend>
+
+          <label class="field">
+            <span>Full Name</span>
+            <input type="text" name="fullname" placeholder="Aigerim Sadykova" autocomplete="name"
+                   required minlength="2" pattern="[A-Za-zА-Яа-яЁёӘәІіҢңҒғҮүҰұҚқӨөҺһ\s\-]{2,}">
+            <small>Letters only, at least 2 characters.</small>
+          </label>
+
+          <label class="field">
+            <span>Phone</span>
+            <input type="tel" name="phone" placeholder="+7 701 123 45 67" autocomplete="tel"
+                   required pattern="\+?[0-9\s\-()]{10,18}">
+            <small>For example +7 701 123 45 67.</small>
+          </label>
+
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+            <small>We send the booking confirmation here.</small>
+          </label>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend>Preferred time</legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="time" value="morning" required><span>Morning</span></label>
+            <label class="choice"><input type="radio" name="time" value="evening" required><span>Evening</span></label>
+          </div>
+        </fieldset>
+
+        <label class="field">
+          <span>Current level</span>
+          <select name="level" required>
+            <option value="" selected disabled>Choose your level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" name="agree" required>
+          <span>I accept the attendance rules</span>
+        </label>
+
+        <button class="button button--cta" type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section aria-labelledby="f-halls">
+      <h2 id="f-halls">Our halls</h2>
+      <address>
+        Hall 1: Dostyk Ave 12, Almaty<br>
+        Hall 2: Abay Ave 45, Almaty<br>
+        <a href="tel:+77011234567">+7 701 123 45 67</a>
+      </address>
+    </section>
+
+    <nav aria-label="Footer navigation">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="#practices">Practices</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#about">About the Studio</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="f-rules">
+      <h2 id="f-rules">Attendance rules</h2>
+      <ul>
+        <li>Come 10 minutes before the class.</li>
+        <li>Cancel a booking at least 6 hours before.</li>
+        <li>Bring a mat or rent one at the desk.</li>
+      </ul>
+    </section>
+
+    <section class="footer__theme" aria-labelledby="f-theme">
+      <h2 id="f-theme">Appearance</h2>
+      <label for="theme-toggle" class="switch">
+        <span class="switch__track"><span class="switch__thumb"></span></span>
+        <span>Dark mode (low intensity)</span>
+      </label>
+    </section>
+
+    <p class="legal">&copy; 2026 Yoga and Pilates Studio. Educational project, ICT6001. All rights reserved.</p>
+  </footer>
+
+  <a class="sticky-cta" href="#signup">Free lesson</a>
+</body>
+</html>
